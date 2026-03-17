@@ -6,6 +6,8 @@ export default function Hero() {
   return (
     <section className={styles.heroWrap}>
       <div className={`inner ${styles.hero}`}>
+
+        {/* LEFT */}
         <div className={styles.left}>
           <span className={styles.tag}>TEF · TCF · A1 TO C2</span>
           <h1 className={styles.h1}>
@@ -23,23 +25,9 @@ export default function Hero() {
               Explore courses →
             </a>
           </div>
-          <div className={styles.groupPhoto}>
-            <img
-              src="/group.jpg"
-              alt="Polyneo students"
-              className={styles.groupImg}
-            />
-            <div className={styles.groupCaption}>
-              <span className={styles.groupCaptionText}>NOS ÉTUDIANTS · VANCOUVER</span>
-              <div className={styles.groupFlag}>
-                <span className={styles.flagBlue}></span>
-                <span className={styles.flagWhite}></span>
-                <span className={styles.flagRed}></span>
-              </div>
-            </div>
-          </div>
         </div>
 
+        {/* RIGHT: stat card + eiffel */}
         <div className={styles.right}>
           <div className={styles.card}>
             <div className={styles.tribar}>
@@ -83,7 +71,33 @@ export default function Hero() {
             </div>
           </div>
         </div>
+
       </div>
+
+      {/* GROUP PHOTO — full width below hero, revealed on scroll */}
+      <div className={styles.groupWrap}>
+        <div className={`inner ${styles.groupInner}`}>
+          <div className={styles.groupPhoto} data-reveal>
+            <img
+              src="/group.jpg"
+              alt="Polyneo students"
+              className={styles.groupImg}
+            />
+            <div className={styles.groupOverlay}>
+              <div className={styles.groupOverlayLeft}>
+                <div className={styles.groupOverlayTitle}>Nos Étudiants</div>
+                <div className={styles.groupOverlaySub}>Vancouver, Canada</div>
+              </div>
+              <div className={styles.groupFlag}>
+                <span className={styles.flagBlue}></span>
+                <span className={styles.flagWhite}></span>
+                <span className={styles.flagRed}></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
   );
 }
