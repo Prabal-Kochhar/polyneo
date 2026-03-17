@@ -34,4 +34,13 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
+  return (
+  <html lang="en">
+    <body suppressHydrationWarning>
+      <Navbar />
+      {children}
+      <Footer />
+    </body>
+  </html>
+);
 }
