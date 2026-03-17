@@ -1,0 +1,98 @@
+.sectionWrap {
+  background: var(--cream);
+  padding: 0 36px;
+}
+
+.section {
+  padding: 56px 0;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.eyebrowLine {
+  height: 1px;
+  width: 22px;
+  background: var(--red);
+  display: block;
+}
+
+.eyebrowText {
+  font-size: 9.5px;
+  letter-spacing: 2.8px;
+  color: var(--red);
+}
+
+.h2 {
+  font-family: var(--font-serif);
+  font-size: 38px;
+  font-weight: 300;
+  color: var(--navy);
+  margin-bottom: 32px;
+  line-height: 1.1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.card {
+  padding: 26px 20px;
+  background: var(--white);
+  border: 0.5px solid var(--border);
+  border-radius: 3px;
+  border-top: 3px solid transparent;
+}
+
+.blue { border-top-color: var(--blue); }
+
+.dark {
+  border-top-color: var(--navy);
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.red { border-top-color: var(--red); }
+
+.level {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--text-light);
+  margin-bottom: 10px;
+}
+
+.dark .level {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  color: var(--navy);
+  margin-bottom: 10px;
+}
+
+.dark .title { color: var(--white); }
+
+.desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.dark .desc { color: rgba(255, 255, 255, 0.5); }
+
+.price {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--blue);
+}
+
+.dark .price { color: var(--red); }

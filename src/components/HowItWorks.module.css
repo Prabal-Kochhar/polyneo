@@ -1,0 +1,90 @@
+.sectionWrap {
+  background: var(--blue);
+  padding: 0 36px;
+}
+
+.section {
+  padding: 56px 0;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.eyebrowLine {
+  height: 1px;
+  width: 22px;
+  background: rgba(255, 255, 255, 0.35);
+  display: block;
+}
+
+.eyebrowText {
+  font-size: 9.5px;
+  letter-spacing: 2.8px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.h2 {
+  font-family: var(--font-serif);
+  font-size: 38px;
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 32px;
+  line-height: 1.1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.step {
+  border-left: 0.5px solid rgba(255, 255, 255, 0.15);
+  padding-left: 16px;
+}
+
+.num {
+  font-family: var(--font-serif);
+  font-size: 36px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.18);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.desc {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.7;
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 44px 20px;
+  }
+
+  .h2 {
+    font-size: 32px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

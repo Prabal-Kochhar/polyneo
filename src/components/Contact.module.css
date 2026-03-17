@@ -1,0 +1,174 @@
+.sectionWrap {
+  background: var(--navy);
+  padding: 0 36px;
+}
+
+.section {
+  padding: 56px 0;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.eyebrowLine {
+  height: 1px;
+  width: 22px;
+  background: rgba(255, 255, 255, 0.3);
+  display: block;
+}
+
+.eyebrowText {
+  font-size: 9.5px;
+  letter-spacing: 2.8px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.h2 {
+  font-family: var(--font-serif);
+  font-size: 38px;
+  font-weight: 300;
+  color: var(--white);
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.75;
+  margin-bottom: 32px;
+  max-width: 400px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.field input,
+.field select,
+.field textarea {
+  background: rgba(255, 255, 255, 0.06);
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  padding: 11px 14px;
+  font-size: 12.5px;
+  color: var(--white);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.field select {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.field textarea {
+  resize: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 2px;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  transition: opacity 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.info {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.infoLabel {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.infoVal {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 44px 20px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 44px 20px;
+  }
+
+  .h2 {
+    font-size: 32px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

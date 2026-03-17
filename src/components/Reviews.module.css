@@ -1,0 +1,149 @@
+.sectionWrap {
+  background: var(--cream);
+  overflow: hidden;
+  padding-bottom: 56px;
+}
+
+.header {
+  padding: 0 36px;
+}
+
+.headerInner {
+  padding: 56px 0 40px;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.eyebrowLine {
+  height: 1px;
+  width: 22px;
+  background: var(--red);
+  display: block;
+}
+
+.eyebrowText {
+  font-size: 9.5px;
+  letter-spacing: 2.8px;
+  color: var(--red);
+}
+
+.h2 {
+  font-family: var(--font-serif);
+  font-size: 38px;
+  font-weight: 300;
+  color: var(--navy);
+  line-height: 1.1;
+}
+
+/* MARQUEE */
+.marqueeWrap {
+  position: relative;
+  width: 100%;
+}
+
+.fadeLeft,
+.fadeRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fadeLeft {
+  left: 0;
+  background: linear-gradient(to right, var(--cream), transparent);
+}
+
+.fadeRight {
+  right: 0;
+  background: linear-gradient(to left, var(--cream), transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: marquee 32s linear infinite;
+  padding: 8px 0 16px;
+}
+
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* CARD */
+.card {
+  width: 280px;
+  flex-shrink: 0;
+  padding: 24px 22px;
+  background: var(--white);
+  border-radius: 3px;
+  border: 0.5px solid var(--border);
+  border-left: 2.5px solid var(--red);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(13, 31, 74, 0.08);
+  cursor: default;
+}
+
+.stars {
+  font-size: 11px;
+  color: var(--red);
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.text {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-style: italic;
+  color: #3a4a6a;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.reviewer {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.date {
+  font-size: 10px;
+  color: var(--text-light);
+  margin-top: 3px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .h2 {
+    font-size: 32px;
+  }
+
+  .fadeLeft,
+  .fadeRight {
+    width: 60px;
+  }
+
+  .marqueeTrack {
+    animation-duration: 24s;
+  }
+}
