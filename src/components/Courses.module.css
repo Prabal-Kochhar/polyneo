@@ -96,3 +96,79 @@
 }
 
 .dark .price { color: var(--red); }
+@media (max-width: 768px) {
+  .sectionWrap {
+    padding: 0;
+  }
+
+  .section {
+    padding: 44px 0;
+  }
+
+  .eyebrow {
+    padding: 0 20px;
+  }
+
+  .h2 {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+
+  .cards {
+    grid-template-columns: unset;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 4px 20px 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card {
+    min-width: 240px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+}
+.cardsOuter {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 36px;
+}
+
+.scrollHint {
+  display: none;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 14px;
+}
+
+.scrollHint span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.scrollHint span:first-child {
+  background: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .cardsOuter {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .scrollHint {
+    display: flex;
+  }
+}

@@ -33,6 +33,9 @@ export default function Courses() {
           <span className={styles.eyebrowText}>OUR PROGRAMS</span>
         </div>
         <h2 className={styles.h2} data-reveal>Choose your path</h2>
+      </div>
+
+      <div className={styles.cardsOuter}>
         <div className={styles.cards}>
           {courses.map((course, index) => (
             <div
@@ -47,6 +50,9 @@ export default function Courses() {
               <div className={styles.price}>{course.price}</div>
             </div>
           ))}
+        </div>
+        <div className={styles.scrollHint}>
+          <span></span><span></span><span></span>
         </div>
       </div>
     </section>
