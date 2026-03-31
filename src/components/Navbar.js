@@ -10,8 +10,14 @@ export default function Navbar() {
             <span className={styles.flagWhite}></span>
             <span className={styles.flagRed}></span>
           </div>
-          <span className={styles.logo}>POLYNEO</span>
+          <div className={styles.logoText}>
+            <h3>
+            Polyneo
+          </h3>
+            
+          </div>
         </div>
+
         <div className={styles.links}>
           <a href="#courses">Courses</a>
           <a href="#teachers">Teachers</a>
@@ -19,6 +25,7 @@ export default function Navbar() {
           <a href="#blog">Blog</a>
           <a href="#contact">Contact</a>
         </div>
+
         <a href="#contact" className={styles.btn}>ENROL NOW</a>
       </div>
     </nav>

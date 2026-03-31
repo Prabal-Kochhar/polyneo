@@ -9,52 +9,64 @@ export default function Hero() {
 
         {/* LEFT */}
         <div className={styles.left}>
-          <span className={styles.tag}>TEF · TCF · A1 TO C2</span>
+          <div className={styles.worldTag}>
+            🌍 Learn the World, Speak Your Future
+          </div>
           <h1 className={styles.h1}>
-            Speak French<br />with <em>confidence</em>
+            Learn French<br />with <em>Polyneo</em>
           </h1>
-          <p className={styles.sub}>
-            Immersive lessons with native teachers. Group classes, private
-            sessions, and exam prep tailored to your goals.
+          <div className={styles.h1Sub}>
+            TEF · TCF · FRENCH CLASSES FROM A1 TO C2
+          </div>
+          <p className={styles.desc}>
+            Master French the modern way: immersive lessons, expert instructors,
+            and a vibrant community built for connection and confidence.
           </p>
+          <div className={styles.tagline}>
+            "We don't sell dreams — we build real progress"
+          </div>
           <div className={styles.btns}>
             <a href="#contact" className={styles.btnPrimary}>
               START YOUR JOURNEY
             </a>
             <a href="#courses" className={styles.btnSecondary}>
-              Explore courses →
+              Explore Courses
+              <span className={styles.btnArrow}>→</span>
             </a>
           </div>
+
+          
         </div>
 
-        {/* RIGHT: stat card + eiffel */}
+        {/* RIGHT */}
         <div className={styles.right}>
-          <div className={styles.card}>
-            <div className={styles.tribar}>
-              <span style={{ background: '#002395' }}></span>
-              <span style={{ background: 'rgba(255,255,255,0.2)' }}></span>
-              <span style={{ background: '#ED2939' }}></span>
+
+          {/* STAT GRID CARD */}
+          <div className={styles.statCard}>
+            <div className={styles.statGrid}>
+              <div className={styles.statItem}>
+                <div className={styles.statNum}>95%</div>
+                <div className={styles.statLabel}>TEF PASS RATE</div>
+              </div>
+              <div className={styles.statItem}>
+                <div className={styles.statNum}>200+</div>
+                <div className={styles.statLabel}>STUDENTS</div>
+              </div>
+              <div className={styles.statItem}>
+                <div className={styles.statNum}>10+</div>
+                <div className={styles.statLabel}>YEARS EXP.</div>
+              </div>
+              <div className={styles.statItem}>
+                <div className={styles.statNum}>4.9★</div>
+                <div className={styles.statLabel}>GOOGLE RATING</div>
+              </div>
             </div>
-            <div className={styles.stat}>
-              <div className={styles.statNum}>95%</div>
-              <div className={styles.statLabel}>TEF SUCCESS RATE</div>
+            <div className={styles.statQuote}>
+              "We don't sell dreams — we build real progress."
             </div>
-            <div className={styles.divider}></div>
-            <div className={styles.stat}>
-              <div className={styles.statNum}>200+</div>
-              <div className={styles.statLabel}>STUDENTS TAUGHT</div>
-            </div>
-            <div className={styles.divider}></div>
-            <div className={styles.stat}>
-              <div className={styles.statNum}>10+</div>
-              <div className={styles.statLabel}>YEARS EXPERIENCE</div>
-            </div>
-            <div className={styles.divider}></div>
-            <p className={styles.quote}>
-              "We don't sell dreams —<br />we build real progress."
-            </p>
           </div>
 
+          {/* EIFFEL IMAGE CARD */}
           <div className={styles.eiffelCard}>
             <img
               src="/eiffel.jpg"
@@ -71,24 +83,23 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
       </div>
 
-      {/* GROUP PHOTO — full width below hero, revealed on scroll */}
+      {/* GROUP PHOTO FULL WIDTH */}
       <div className={styles.groupWrap}>
         <div className={`inner ${styles.groupInner}`}>
-          <div className={styles.groupPhoto} data-reveal>
+          <div className={styles.groupPhotoFull} data-reveal>
             <img
               src="/group.jpg"
               alt="Polyneo students"
-              className={styles.groupImg}
+              className={styles.groupImgFull}
             />
             <div className={styles.groupOverlay}>
               <div className={styles.groupOverlayLeft}>
                 <div className={styles.groupOverlayTitle}>Nos Étudiants</div>
                 <div className={styles.groupOverlaySub}>Vancouver, Canada</div>
               </div>
-              <div className={styles.groupFlag}>
+              <div className={styles.groupFlagFull}>
                 <span className={styles.flagBlue}></span>
                 <span className={styles.flagWhite}></span>
                 <span className={styles.flagRed}></span>

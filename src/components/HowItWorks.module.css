@@ -1,8 +1,10 @@
 .sectionWrap {
-  background: var(--blue);
+  background: var(--cream);
   position: relative;
   overflow: hidden;
   padding: 0 36px;
+  border-top: 0.5px solid var(--border);
+  border-bottom: 0.5px solid var(--border);
 }
 
 /* WATERMARK */
@@ -27,7 +29,7 @@
   font-size: 22px;
   font-weight: 300;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.045);
+  color: rgba(42, 31, 14, 0.04);
   letter-spacing: 6px;
   padding: 28px 0;
   flex-shrink: 0;
@@ -50,8 +52,8 @@
 }
 
 .flagBar span { flex: 1; }
-.flagBlue  { background: rgba(255, 255, 255, 0.4); }
-.flagWhite { background: var(--white); }
+.flagBlue  { background: var(--blue); }
+.flagWhite { background: rgba(42, 31, 14, 0.15); }
 .flagRed   { background: var(--red); }
 
 /* EYEBROW */
@@ -65,28 +67,28 @@
 .eyebrowLine {
   height: 1px;
   width: 22px;
-  background: rgba(255, 255, 255, 0.35);
+  background: var(--text-light);
   display: block;
 }
 
 .eyebrowText {
   font-size: 9.5px;
   letter-spacing: 2.8px;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-light);
 }
 
 .h2 {
   font-family: var(--font-serif);
-  font-size: 42px;
-  font-weight: 300;
-  color: var(--white);
+  font-size: 38px;
+  font-weight: 400;
+  color: var(--navy);
   margin-bottom: 10px;
   line-height: 1.1;
 }
 
 .subtitle {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.45);
+  color: var(--text-muted);
   margin-bottom: 52px;
   line-height: 1.7;
   max-width: 380px;
@@ -107,7 +109,7 @@
   left: calc(12.5%);
   right: calc(12.5%);
   height: 0.5px;
-  background: rgba(255, 255, 255, 0.12);
+  background: var(--border);
 }
 
 .step {
@@ -121,26 +123,27 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  border: 0.5px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--white);
   margin-bottom: 24px;
   position: relative;
   transition: background 0.3s, border-color 0.3s;
+  box-shadow: 0 2px 8px rgba(42, 31, 14, 0.06);
 }
 
 .step:hover .circle {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: var(--cream);
+  border-color: var(--text-light);
 }
 
 .num {
   font-family: var(--font-serif);
   font-size: 22px;
-  font-weight: 300;
-  color: var(--white);
+  font-weight: 400;
+  color: var(--navy);
   line-height: 1;
 }
 
@@ -158,22 +161,22 @@
 .tag {
   font-size: 8.5px;
   letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-light);
   margin-bottom: 8px;
 }
 
 .title {
   font-family: var(--font-serif);
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
-  color: var(--white);
+  color: var(--navy);
   margin-bottom: 8px;
   line-height: 1.2;
 }
 
 .desc {
   font-size: 11.5px;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--text-muted);
   line-height: 1.75;
 }
 
@@ -184,14 +187,14 @@
   justify-content: space-between;
   margin-top: 52px;
   padding-top: 32px;
-  border-top: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-top: 0.5px solid var(--border);
 }
 
 .ctaText {
   font-family: var(--font-serif);
   font-size: 20px;
   font-style: italic;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-muted);
   max-width: 280px;
   line-height: 1.5;
 }
@@ -202,12 +205,19 @@
   padding: 13px 26px;
   background: var(--red);
   color: var(--white);
-  border: none;
+  border: 2px solid var(--red);
   border-radius: 2px;
   cursor: pointer;
   font-family: var(--font-sans);
+  font-weight: 600;
   white-space: nowrap;
-  transition: opacity 0.2s, transform 0.2s;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.ctaBtn:hover {
+  background: transparent;
+  color: var(--red);
+  transform: translateY(-1px);
 }
 
 .ctaBtn:hover {

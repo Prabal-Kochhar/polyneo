@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@300;400;500;600&family=Raleway:wght@300;400;500&display=swap');
 
 :root {
-  --navy:       #0d1f4a;
-  --navy-deep:  #060f26;
+  --navy:       #2a1f0e;
+  --navy-deep:  #1a1008;
   --blue:       #002395;
-  --red:        #ED2939;
-  --cream:      #f5f3ef;
+  --red:        #c94040;
+  --cream:      #f8f4ee;
   --white:      #ffffff;
-  --border:     #e8e4dc;
-  --text-muted: #7a8aaa;
-  --text-light: #9aabca;
+  --border:     #e8e0d0;
+  --text-muted: #7a6a50;
+  --text-light: #b0a080;
+  --gold:       #8a6a20;
 
-  --font-serif: 'Cormorant Garamond', serif;
-  --font-sans:  'DM Sans', sans-serif;
+  --font-serif: 'Libre Baskerville', serif;
+  --font-sans:  'Nunito Sans', sans-serif;
 
   --max-width: 1100px;
 }
@@ -49,7 +50,6 @@ input, select, textarea {
   font-family: var(--font-sans);
 }
 
-/* SCROLL REVEAL */
 [data-reveal] {
   opacity: 0;
   transform: translateY(28px);
@@ -94,7 +94,6 @@ input, select, textarea {
   transform: scale(1);
 }
 
-/* MAX WIDTH WRAPPER */
 .inner {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -102,7 +101,5 @@ input, select, textarea {
 }
 
 @media (max-width: 768px) {
-  body {
-    overflow-x: hidden;
-  }
+  body { overflow-x: hidden; }
 }
